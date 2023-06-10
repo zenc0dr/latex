@@ -36,13 +36,8 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
 
-            #TODO(zenc0rd): Вынести в файл после создания отдельного посредника
-            Route::prefix('latex')->group(function () {
-                Route::match(['get', 'post'], '{performer}:{method}', function ($performer, $method) {
-                    $performer = str_replace('.', '\\', $performer);
-                    return app("App\Latex\Performers\\$performer")->{$method}();
-                });
-            });
+            Route::prefix('latex')
+                ->group(base_path('app/Latex/routes.php'));
         });
     }
 }

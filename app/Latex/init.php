@@ -8,7 +8,3 @@ if (!function_exists('latex')) {
         return \App\Latex\Latex::getInstance();
     }
 }
-
-Route::match(['get', 'post'], '/latex/{performer}:{method}', function ($performer, $method) {
-    return app("App\Latex\Performers\\$performer")->{$method}();
-});

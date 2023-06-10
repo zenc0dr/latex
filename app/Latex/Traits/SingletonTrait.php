@@ -4,7 +4,7 @@ namespace App\Latex\Traits;
 
 trait SingletonTrait
 {
-    private static self $instance;
+    private static ?self $instance = null;
 
     public static function getInstance(): self {
         if (!self::$instance) {
@@ -18,5 +18,5 @@ trait SingletonTrait
 
     private function __clone() {}
 
-    private function __wakeup() {}
+    public function __wakeup() {}
 }

@@ -4,9 +4,11 @@ namespace App\Latex\Performers\Debug;
 
 class Test
 {
-    # /latex/debug:hallo
+    # /latex/Debug.Test:hallo
     public function hallo(): string
     {
-        return 'hallo';
+        return latex()->strings()->toJson([
+            'foo' => 'bar'
+        ]);
     }
 }

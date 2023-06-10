@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Latex\Classes;
+namespace App\Latex\Services;
 
 use App\Latex\Traits\SingletonTrait;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Latex\Classes;
+namespace App\Latex\Classes;
 
-use App\Http\Latex\Traits\SingletonTrait;
+use App\Latex\Traits\SingletonTrait;
 
 class Strings
 {

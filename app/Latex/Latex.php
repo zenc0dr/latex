@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Latex;
+namespace App\Latex;
 
-use App\Http\Latex\Classes\Strings;
-use App\Http\Latex\Traits\SingletonTrait;
+use App\Latex\Classes\Strings;
+use App\Latex\Traits\SingletonTrait;
 
 class Latex
 {

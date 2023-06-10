@@ -32,7 +32,7 @@
             "Tests\\": "tests/"
         },
         "files": [
-            "app/Latex/latexHelpers.php"
+            "app/Latex/init.php"
         ]
     },
     "scripts": {
